@@ -1,0 +1,54 @@
+html {
+    height: 100%;
+}
+
+.background {
+    background-image: url(../images/heart2.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn-outline:hover {
+    background-color: #d64343;
+    border-color: #d64343;
+}
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h1, h2 {
+    color: white;
+}
+
+.datepicker {
+    background-color: transparent;
+    color: white;
+    width: 250px;
+    margin: auto;
+}
+
+::placeholder {
+    color: white !important;
+}
+
+@media (max-width: 768px) {
+    .background {
+        overflow-y: auto;
+    }
+    .btn-outline:focus {
+        background-color: transparent;
+        border-color: white;
+    }
+}
+
