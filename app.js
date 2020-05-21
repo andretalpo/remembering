@@ -30,7 +30,7 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 // default value for title local
 app.locals.title = 'Remembering';
 
-const indexRooutes = require('./routes/indexRoutes');
-app.use('/', indexRooutes);
+const indexRoutes = require('./routes/indexRoutes');
+app.use('/', indexRoutes);
 
 module.exports = app;

@@ -7,6 +7,8 @@ html {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-y: auto;
+    color: white;
 }
 
 .btn-outline:hover {
@@ -27,10 +29,6 @@ h2 {
     font-size: 2rem;
 }
 
-h1, h2 {
-    color: white;
-}
-
 .datepicker {
     background-color: transparent;
     color: white;
@@ -42,13 +40,47 @@ h1, h2 {
     color: white !important;
 }
 
+.container {
+    border-radius: 20px;
+    border: 1px solid white;
+    width: 630px;
+}
+
+.container img {
+    width: 600px;
+}
+
+.dinamic-content {
+    display: flex;
+    justify-content: center;
+}
+
+.inner-text {
+    text-align: left;
+    width: 300px;
+}
+
+.inner-text p {
+    font-size: 1.3rem;
+}
+
 @media (max-width: 768px) {
-    .background {
-        overflow-y: auto;
-    }
     .btn-outline:focus {
         background-color: transparent;
         border-color: white;
+    }
+    .container {
+        width: fit-content;
+    }
+    .container img {
+        width: 300px;
+    }
+    .dinamic-content {
+        flex-wrap: wrap;
+    }
+    .inner-text {
+        margin: 0 auto !important;
+        width: 400px;
     }
 }
 
