@@ -1,17 +1,19 @@
 <div class="background h-100">
     <div class="container-fluid center p-4">
-        <h1 class="p-2">Remembering</h1>
+        <p>__________________________________</p>
         <h2 class="p-2">Nossos momentos sempre que sentir saudades</h2>
-        <button class="btn btn-outline m-3 mb-4">Uma data aleatória</button>
+        <p>__________________________________</p>
+        <button id="randomButton" class="btn btn-outline m-3 mb-4">Uma data aleatória</button>
         <input class="form-control datepicker" id="date" type="date">
-        <div class="dinamic-content">
+        <div class="dinamic-content invisible">
             <div class="container p-3 my-4">
-                <img src="/images/pictures/img-20181223.jpg" alt="picture">
+                <img id="eventImage" src="" alt="picture">
             </div>
             <div class="inner-text my-5 ml-3">
-                <h3>Natal 2018</h3>
-                <p>Nesse dia íamos ver a árvore de natal no Ibirapuera, e corriamos pra não pegar chuva!</p>
+                <h3 id="eventTitle"></h3>
+                <p id="eventDescription"></p>
             </div>
         </div>
     </div>
+    <script type="module" src="/javascripts/script.js"></script>
 </div>
