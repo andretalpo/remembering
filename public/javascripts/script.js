@@ -23,7 +23,6 @@ const randomizeDate = () => {
     const min = 0;
     const max = Math.floor(events.length - 1);
     const index = Math.floor(Math.random() * (max - min + 1)) + min;
-    console.log(index);
     return events[index].date;
 }
 
