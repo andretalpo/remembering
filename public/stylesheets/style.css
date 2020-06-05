@@ -2,13 +2,18 @@ html {
     height: 100%;
 }
 
+body {
+    min-height: 100%;
+}
+
 .background {
     background-image: url(../images/heart2.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-y: auto;
+    overflow-y: scroll;
     color: white;
+    min-height: 100%;
 }
 
 .btn-outline:hover {
