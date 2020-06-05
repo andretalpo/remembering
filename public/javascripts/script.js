@@ -32,6 +32,7 @@ const setEvent = (event) => {
         document.getElementById('eventTitle').innerHTML = event.title;
         document.getElementById('eventDescription').innerHTML = event.description;
         document.querySelector('.dinamic-content').classList.remove('invisible');
+        document.getElementById('date').value = event.date;
     } else {
         document.querySelector('.dinamic-content').classList.add('invisible');
     }
