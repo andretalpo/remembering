@@ -29,8 +29,8 @@ const randomizeDate = () => {
 const setEvent = (event) => {
     if (event) {
         document.getElementById('eventImage').setAttribute('src', `/images/pictures/${event.url}`);
-        document.getElementById('eventTitle').innerHTML = event.title;
-        document.getElementById('eventDescription').innerHTML = event.description;
+        document.getElementById('eventTitle').innerHTML = event.title ? event.title : "";
+        document.getElementById('eventDescription').innerHTML = event.description ? event.description : "";
         document.querySelector('.dinamic-content').classList.remove('invisible');
         document.getElementById('date').value = event.date;
     } else {
